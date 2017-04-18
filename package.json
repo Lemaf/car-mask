@@ -1,0 +1,19 @@
+{
+	"name": "car-mask",
+	"version": "0.1.0",
+	"description": "An angular mask for the CAR(Cadastro Ambiental Rural) code.",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Lemaf/carMask.git"
+	},
+	"keywords": [
+		"mask"
+	],
+	"author": "Renan Carlos Rodrigues",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Lemaf/carMask/issues"
+	},
+	"homepage": "https://github.com/Lemaf/carMask#readme"
+}
