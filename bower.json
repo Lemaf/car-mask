@@ -1,0 +1,13 @@
+{
+  "name": "car-mask",
+  "description": "An angular mask for the CAR(Cadastro Ambiental Rural) code.",
+  "main": "dist/car-mask.js",
+  "authors": [
+    "Renan Carlos Rodrigues"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mask"
+  ],
+  "homepage": "https://github.com/Lemaf/car-mask"
+}
