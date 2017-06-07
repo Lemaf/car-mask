@@ -39,7 +39,7 @@
 
 	NumeroCar.prototype._eventKeyupHandler = function(input, $scope, e){
 
-		var c = String.fromCharCode(event.keyCode);
+		var c = event.key;
 
 		if (c.match(/\w/)) {
 
