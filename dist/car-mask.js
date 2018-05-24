@@ -4,8 +4,6 @@
 
 		$element[0]
 			.onkeypress = this._eventKeypressHandler.bind(this, $element[0], $scope);
-		$element[0]
-			.onkeyup = this._eventKeypressHandler.bind(this, $element[0], $scope);
 
 	};
 
