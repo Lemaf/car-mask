@@ -3,7 +3,9 @@
 	var NumeroCar = function($element, $scope){
 
 		$element[0]
-			.onkeyup = this._eventKeyupHandler.bind(this, $element[0], $scope);
+			.onkeypress = this._eventKeypressHandler.bind(this, $element[0], $scope);
+		$element[0]
+			.onkeyup = this._eventKeypressHandler.bind(this, $element[0], $scope);
 
 	};
 
