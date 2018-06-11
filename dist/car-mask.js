@@ -3,7 +3,10 @@
 	var NumeroCar = function($element, $scope){
 
 		$element[0]
-			.onkeyup = this._eventKeyupHandler.bind(this, $element[0], $scope);
+			.onkeypress = this._eventKeypressHandler.bind(this, $element[0], $scope);
+
+		$element[0]
+			.onkeyup  = this._eventKeyupHandler.bind(this, $element[0], $scope);
 
 	};
 
@@ -37,7 +40,7 @@
 		return estado ? estado.join() : '';
 	};
 
-	NumeroCar.prototype._eventKeyupHandler = function(input, $scope, e){
+	NumeroCar.prototype._eventKeypressHandler = function(input, $scope, e){
 
 		var c = event.key;
 
@@ -47,7 +50,7 @@
 				endCarretPosition = input.selectionEnd,
 				initInputValue = input.value;
 
-			input.value = this._execMask(input.value);
+			input.value = this._execMask(input.value + c);
 
 			if(e.ctrlKey && c.match(/v/i)){
 				input.setSelectionRange(input.value.length, input.value.length);
@@ -58,6 +61,12 @@
 			e.preventDefault();
 
 		}
+
+	};
+
+	NumeroCar.prototype._eventKeyupHandler = function(input, $scope, e){
+
+		input.value = this._execMask(input.value);
 
 	};
 
